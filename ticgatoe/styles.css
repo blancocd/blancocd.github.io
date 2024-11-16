@@ -1,0 +1,395 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  overflow:auto;
+}
+
+.containerW {
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.X1won {
+  display: flex;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 30px;
+  height: 4px;
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.X2won {
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 30px;
+  height: 4px;
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.Owon {
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.container {
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell {
+  display: flex;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container1O {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell1O {
+  display: flex;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container1X {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell1X {
+  display: flex;
+  position: absolute;
+  width: 2px;
+  height: 17px;
+  transform: rotate(45deg);
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container2X {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.cell2X {
+  display: flex;
+  position: absolute;
+  width: 2px;
+  height: 17px;
+  transform: rotate(-45deg);
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+
+.container2 {
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell2 {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  background: #000;
+  border-radius: 50%;
+  border: 0px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1O2 {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell1O2 {
+  display: flex;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container1X2 {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell1X2 {
+  display: flex;
+  position: absolute;
+  width: 6px;
+  height: 40px;
+  transform: rotate(45deg);
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container2X2 {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.cell2X2 {
+  display: flex;
+  position: absolute;
+  width: 6px;
+  height: 40px;
+  transform: rotate(-45deg);
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+
+.container3 {
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell3 {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  background: #000;
+  border-radius: 50%;
+  border: 0px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1O3 {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell1O3 {
+  display: flex;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container1X3 {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+.cell1X3 {
+  display: flex;
+  position: absolute;
+  width: 15px;
+  height: 92px;
+  transform: rotate(45deg);
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.container2X3 {
+  pointer-events: none;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.cell2X3 {
+  display: flex;
+  position: absolute;
+  width: 15px;
+  height: 92px;
+  transform: rotate(-45deg);
+  border: 0px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
