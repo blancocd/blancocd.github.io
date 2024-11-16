@@ -38,7 +38,6 @@ function hmsph(radius, ctr, offx, offy) {
   let x = true;
   let over = false;
   let onetap = false;
-  let slisol = "012345670123"
   let lyrX = new Array(3).fill(false).map(() => new Array(12).fill(false))
   let lyrO = new Array(3).fill(false).map(() => new Array(12).fill(false))
   const isTrue = (currentValue) => currentValue == true;
