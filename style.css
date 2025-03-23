@@ -295,6 +295,22 @@ h3 a:hover {
   float: left;
 }
 
+.notes {
+  margin-bottom: 0.5em;
+}
+
+.notes p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #a0a8b0;
+}
+
+.notes-description {
+  width: 80%;
+  float: left;
+}
+
+
 .misc {
   margin-bottom: 0.5em;
 }

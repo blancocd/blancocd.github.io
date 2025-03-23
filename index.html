@@ -30,10 +30,10 @@
         <div id="intro-text">
           <h1>César Díaz Blanco</h1>
           <p>
-            Hi there! I'm a machine learning master's student at the <a href="https://uni-tuebingen.de/en/">University of Tübingen</a>. I am interested in using computer vision and its applications to media production from high quality and dynamic human body representations to multi-scale and robust 3D scene reconstruction and immersive sound.
+            Hi there! I'm a machine learning master's student at the <a href="https://uni-tuebingen.de/en/">University of Tübingen</a>. I am interested in using computer vision and its applications to media production from high quality and multi-scale 3D scene reconstruction to robust and dynamic human body representations.
             <br>
             <br>
-            I'm also a working student in software engineering at <a href="https://www.deepscenario.com/">DeepScenario</a>. There I work on the general computer vision pipeline from visualization scripts, mesh manipulation, processing of input videos, and release of inference data.
+            I'm also a part-time working student in software engineering at <a href="https://www.deepscenario.com/">DeepScenario</a>. There I work on extending our detection and tracking pipeline to multiple and dynamic camera sensors. I've also worked on the release of inferred data by writing visualization and mesh manipulation scripts.
             <br>
             <br>
             <a href="mailto:blancocedi@gmail.com">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -51,6 +51,7 @@
       <div id="filters" class="button-group">
         <!-- <button class="button" data-filter="*">Show All</button> -->
         <button class="button is-checked" data-filter=".projects">Projects</button>
+        <button class="button" data-filter=".notes">Research Notes</button>
         <button class="button" data-filter=".misc">Misc</button>
       </div>
 
@@ -65,9 +66,9 @@
           <div class="project-description">
             <h3><a href="https://github.com/Daniel-Eskandar/Dynamic-Gaussian-Visualizer">Dynamic Gaussian Splatting Viewer for Head Avatars</a></h3>
             <p>
-               • Enabled on-the-fly curly hair editing with controllable amplitude and frequency   <br>
+               • Achieved on-the-fly curly hair editing with controllable amplitude and frequency   <br>
                • Implemented a gaussian axes view with OpenGL using vertex and fragment shaders  <br>
-               • Optimized loading of frames either from dynamic avatars or hair editing features <br>
+               • Enabled real-time frame loading for dynamic avatars and hair editing <br>
                 <a href="https://github.com/Daniel-Eskandar/Dynamic-Gaussian-Visualizer">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                 <a href="https://blancocd.com/videos/hair.webm">Demo</a>
                 <br><br>
@@ -110,7 +111,37 @@
           </div>
         </div>
 
-        <!-- Services -->
+        <!-- Reports -->
+        <div class="list-item notes" data-category="notes">
+          <a href="notes/NeRF.pdf" class="thumbnail">
+              <img src="notes/nerf.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="notes/NeRF.pdf">NeRF and follow-up works </a></h3>
+            <p>
+                Report focusing on the volume rendering equation, its approximation in NeRF, and succesive works addresing dynamic scenes, efficient training, and surface extraction. <br>
+                Written as part of a bonus exercise for the <a href="https://virtualhumans.mpi-inf.mpg.de/VH23/">Virtual Humans WS23/24 course.</a> <br>
+                <a href="https://blancocd.com/notes/NeRF.pdf">Report</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item notes" data-category="notes">
+          <a href="notes/AliasingNVS.pdf" class="thumbnail">
+              <img src="notes/aliasing.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="notes/AliasingNVS.pdf">Aliasing in Novel View Synthesis</a></h3>
+            <p>
+                Report and slides focusing on the shortcomings of NeRF and 3DGS when rendering images at different sampling rates than those in the training set. It gives a brief but detailed description of NeRF and 3DGS to understand where they fail, introduces Mip-NeRF and Mip-Splatting solutions, and highlights aliasing effects specific to differential rendering methods.  <br>
+                The report and slides were made as part of the <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/lehre/seminar-fortgeschrittene-themen-aus-computergrafik-und-computer-vision-inf4168/"> Advanced Topics in Computer Graphics and Computer Vision Seminar WS 24/25.</a> <br>
+                <a href="https://blancocd.com/notes/AliasingNVS.pdf">Report</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://unitc-my.sharepoint.com/:p:/g/personal/zxoox46_s-cloud_uni-tuebingen_de/ERPWVd_aJptNt8zWYz9XiMYBew92KtDQvz2G_bRvi0xpIQ?e=EknuRP">Slides</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Miscellaneous -->
         <div class="list-item misc" data-category="misc">
           <a href="ticgatoe/TicGaToe.html" class="thumbnail">
               <img src="images/ticgatoe.png">
@@ -128,7 +159,7 @@
 
       </div>
 
-      <div id="footer">This website is inspired by <a href="https://andyzeng.github.io/">Andy Zeng's website</a> which in turn was inspired by <a href="https://jonbarron.info/">Jon's website</a>.</div>
+      <div id="footer">This website is adapted from <a href="https://andyzeng.github.io/">Andy Zeng's website</a> which in turn was inspired by <a href="https://jonbarron.info/">Jon's website</a>.</div>
 
     </div>
 
