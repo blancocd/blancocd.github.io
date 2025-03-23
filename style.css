@@ -305,11 +305,10 @@ h3 a:hover {
   color: #a0a8b0;
 }
 
-.notes-description {
+.note-description {
   width: 80%;
   float: left;
 }
-
 
 .misc {
   margin-bottom: 0.5em;
