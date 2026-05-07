@@ -58,7 +58,8 @@ table {
 }
 
 #main {
-  width: 54em;
+  width: 90%;
+  max-width: 54em;
   margin: 0px auto;
   position: relative;
   min-height: 100vh;
@@ -362,4 +363,24 @@ h3 a:hover {
   border-radius: 8px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.6);
   outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  #intro {
+    flex-direction: column-reverse; /* Text then Image, or vice versa */
+    align-items: center;
+  }
+  #intro-text {
+    width: 100%;
+  }
+  #intro-image {
+    margin: 1em 0; /* Center the image */
+  }
+  .thumbnail {
+    width: 100%; /* Make thumbnails full width on small screens */
+    margin-bottom: 1em;
+  }
+  .project-description {
+    width: 100%;
+  }
 }
