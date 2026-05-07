@@ -63,7 +63,7 @@
       <!-- Research -->
         <div class="list-item research" data-category="research">
           <a class="thumbnail" data-lightbox-src="research/master_thesis_video.mp4">
-            <video playsinline="" muted="" loop="" width="180px">
+            <video playsinline muted loop width="100%">
               <source src="research/master_thesis_video_small.webm" type="video/webm">
             </video>
           </a>
@@ -82,9 +82,9 @@
           </div>
         </div>
         <div class="list-item research" data-category="research">
-          <a class="thumbnail">
-            <video playsinline="" muted="" loop="" width="180px">
-              <source src="research/text_driven_mv_fashion_editing_video.mp4" type="video/mp4">
+          <a class="thumbnail" data-lightbox-src="research/text_driven_mv_fashion_editing_video.mp4">
+            <video playsinline muted loop width="100%">
+              <source src="research/text_driven_mv_fashion_editing_video_small.webm" type="video/webm">
             </video>
           </a>
           <div class="project-description">
@@ -105,7 +105,7 @@
 
         <div class="list-item research" data-category="research">
           <a class="thumbnail" data-lightbox-src="research/electron_heating_video.mp4">
-            <video playsinline="" muted="" loop="" width="180px">
+            <video playsinline muted loop width="100%">
               <source src="research/electron_heating_video_small.webm#t=2" type="video/webm">
             </video>
           </a>
@@ -126,7 +126,7 @@
         <!-- Projects -->
         <div class="list-item projects" data-category="projects">
           <a class="thumbnail" data-lightbox-src="projects/gaussian_head_viewer_video.webm">
-            <video playsinline="" muted="" loop="" width="180px">
+            <video playsinline muted loop width="100%">
               <source src="projects/gaussian_head_viewer_video_small.webm" type="video/webm">
             </video>
           </a>
@@ -149,7 +149,7 @@
 
         <div class="list-item projects" data-category="projects">
           <a href="#" class="thumbnail" data-lightbox-src="projects/NN-numpy_axolotl_positional_encodings.mp4">
-            <video playsinline="" muted="" loop="" width="180px">
+            <video playsinline muted loop width="100%">
               <source src="projects/NN-numpy_axolotl.mp4#t=1" type="video/mp4">
             </video>
           </a>
@@ -295,9 +295,18 @@
         }
       }
 
-      $('.thumbnail video').on('mouseenter', function() {
-        this.play();
-      }).on('mouseleave', function() {
+      $('.thumbnail video').on('mouseenter touchstart', function(e) {
+        if(e.type === 'touchstart') {
+        }
+        
+        var playPromise = this.play();
+        
+        if (playPromise !== undefined) {
+          playPromise.catch(function(error) {
+            console.log("Autoplay prevented by browser");
+          });
+        }
+      }).on('mouseleave touchend touchcancel', function(e) {
         this.pause();
       });
 
@@ -311,12 +320,13 @@
           var sourceHTML = '';
 
           if (customSrc) {
-            sourceHTML = '<source src="' + customSrc + '" type="video/mp4">';
+            var videoType = customSrc.endsWith('.webm') ? 'video/webm' : 'video/mp4';
+            sourceHTML = '<source src="' + customSrc + '" type="' + videoType + '">';
           } else {
             sourceHTML = $video.html(); 
           }
 
-          var lightboxVideo = '<video autoplay loop>' + sourceHTML + '</video>';
+          var lightboxVideo = '<video autoplay loop playsinline>' + sourceHTML + '</video>';
 
           $('#video-lightbox').html(lightboxVideo).css('display', 'flex');
         }
