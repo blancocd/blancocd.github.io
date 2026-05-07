@@ -4,7 +4,7 @@
     <!-- Title -->
     <title>César Díaz Blanco</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Isotope JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -30,17 +30,20 @@
         <div id="intro-text">
           <h1>César Díaz Blanco</h1>
           <p>
-            Hi there! I'm a machine learning master's student at the <a href="https://uni-tuebingen.de/en/">University of Tübingen</a>. I am interested in using computer vision and its applications to media production from high quality and multi-scale 3D scene reconstruction to robust and dynamic human body representations.
-            <br>
-            <br>
-            I'm also a part-time working student in software engineering at <a href="https://www.deepscenario.com/">DeepScenario</a>. There I work on extending the detection and tracking pipeline to multiple and dynamic camera sensors. I've also worked on the release of inferred data by writing visualization and mesh manipulation scripts.
-            <br>
-            <br>
-            <a href="mailto:blancocedi@gmail.com">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="files/cv.pdf">Curriculum Vitae</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/blancocd">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/c%C3%A9sar-d%C3%ADaz-blanco-7b7160198/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            Hi there! I am a Machine Learning Master's student at the <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/studium/studierende/lehre-studienorganisation/studiengaenge/machine-learning/" target="_blank" rel="noopener noreferrer">University of Tübingen</a> 
+            interested in 3D Computer Vision, particularly in scalable representations and models that enable geometrically grounded and visually rich world models.
             <br><br>
+            During my Master's, I have had the privilege of working with:
+            <ul style="margin-top: 5px; margin-bottom: 15px; padding-left: 20px;">
+              <li>The <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/home/" target="_blank" rel="noopener noreferrer">Autonomous Vision Group</a> led by <a href="https://www.cvlibs.net/" target="_blank" rel="noopener noreferrer">Prof. Dr.-Ing. Andreas Geiger</a></li>
+              <li>The <a href="https://virtualhumans.mpi-inf.mpg.de/" target="_blank" rel="noopener noreferrer">Real Virtual Humans Group</a> led by <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" target="_blank" rel="noopener noreferrer">Prof. Dr. Gerard Pons-Moll</a></li>
+              <li><a href="https://www.deepscenario.com/" target="_blank" rel="noopener noreferrer">DeepScenario</a> as a part-time Computer Vision and Software Engineer</li>
+            </ul>
+            <a href="mailto:blancocedi@gmail.com">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="cv.pdf">Curriculum Vitae</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/blancocd">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/c%C3%A9sar-d%C3%ADaz-blanco-7b7160198/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
           </p>
         </div>
         <div id="intro-image">
@@ -50,118 +53,165 @@
 
       <div id="filters" class="button-group">
         <!-- <button class="button" data-filter="*">Show All</button> -->
-        <button class="button is-checked" data-filter=".projects">Projects</button>
-        <button class="button" data-filter=".notes">Research Notes</button>
+         <button class="button is-checked" data-filter=".research">Research</button>
+        <button class="button" data-filter=".projects">Projects</button>
+        <button class="button" data-filter=".notes">Notes</button>
         <button class="button" data-filter=".misc">Misc</button>
       </div>
 
       <div class="grid">
-        <!-- Projects -->
-        <div class="list-item projects" data-category="projects">
-          <a href="https://github.com/Daniel-Eskandar/Dynamic-Gaussian-Visualizer" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
-              <source src="videos/hair.webm" type="video/webm">
+      <!-- Research -->
+        <div class="list-item research" data-category="research">
+          <a class="thumbnail">
+            <video playsinline="" muted="" loop="" width="180px">
+              <source src="research/master_thesis_video.mp4" type="video/mp4">
             </video>
           </a>
           <div class="project-description">
-            <h3><a href="https://github.com/Daniel-Eskandar/Dynamic-Gaussian-Visualizer">Dynamic Gaussian Splatting Viewer for Head Avatars</a></h3>
+            <h3><a href="research/master_thesis_slides.pdf" target="_blank" rel="noopener noreferrer">Master Thesis: Geometrically Accurate Feed-Forward Gaussian Splatting for Unbounded Scenes</a></h3>
+            <p style="margin-bottom: 0px;">
+              <span style="color: #150c21b6;">Advisors: <a href="https://niujinshuchong.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Zehao Yu</a>, <a href="https://haofeixu.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Haofei Xu</a>, <a href="https://www.cvlibs.net/" class="author-link" target="_blank" rel="noopener noreferrer">Andreas Geiger</a></span>
+            </p>
             <p>
-               • Achieved on-the-fly curly hair editing with controllable amplitude and frequency   <br>
-               • Implemented a gaussian axes view with OpenGL using vertex and fragment shaders  <br>
-               • Enabled real-time frame loading for dynamic avatars and hair editing <br>
-                <a href="https://github.com/Daniel-Eskandar/Dynamic-Gaussian-Visualizer">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="videos/hair.webm">Demo</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://unitc-my.sharepoint.com/:p:/g/personal/zxoox46_s-cloud_uni-tuebingen_de/IQCQNlhB0-brRKGIGxnjAo1KAZuZK7mVYh0am8kHGzlSuxQ?e=EhxrZA">Slides</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="projects/dynamic_viewer.pdf">Report</a>
-                <br><br>
+              A Feed-Forward Gaussian Splatting model designed to generate geometrically accurate, unbounded scenes from 16 images in 0.4 seconds, with full mesh extraction in 0.9 seconds<br>
+                • Improved mesh reconstruction precision on the Tanks and Temples (TnT) dataset by 41% over the photometric-only encoder, matching per-scene optimization performance<br>
+                • Reduced absolute relative error for depth prediction across MipNeRF360, TnT, and DL3DV by 30% against the photometric-only encoder and 39% against Depth Anything 3<br>
+                <a href="research/master_thesis_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
+            </p>
+            <br>
+          </div>
+        </div>
+        <div class="list-item research" data-category="research">
+          <a class="thumbnail">
+            <video playsinline="" muted="" loop="" width="180px">
+              <source src="research/text_driven_mv_fashion_editing_video.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="research/text_driven_mv_fashion_editing.pdf" target="_blank" rel="noopener noreferrer">Text-Driven Multi-View Fashion Editing</a></h3>
+            <p style="margin-bottom: 0px;">
+              <span style="color: #150c21b6;">César Díaz Blanco</span>, <a href="https://garvita-tiwari.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Garvita Tiwari</a>, <a href="https://bernakabadayi.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Berna Kabadayi</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/Kister.html" class="author-link" target="_blank" rel="noopener noreferrer">Nikita Kister</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" class="author-link" target="_blank" rel="noopener noreferrer">Gerard Pons-Moll</a>
+            </p>
+            <p>
+              A text-guided two-stage fashion editing framework that utilizes state-of-the-art generative models to modify garments with strict 3D consistency across multi-view images<br>
+                • Created an evaluation suite for the outer garment-removal task to quantify 3D consistency on generated regions, removal success, generation quality, and preservation of unmodified regions<br>
+                • Achieved a 90% removal success rate on the 4D-DRESS dataset and validated 3D consistency by optimizing a 3DGS scene on 10 generated views, yielding 28.44 PSNR on 10 held-out images<br>
+                <a href="research/text_driven_mv_fashion_editing.pdf" target="_blank" rel="noopener noreferrer">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/blancocd/Text-Driven-Multi-View-Fashion-Editing" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+            <br><br><br>
+          </div>
+        </div>
+
+        <div class="list-item research" data-category="research">
+          <a class="thumbnail">
+            <video playsinline="" muted="" loop="" width="180px">
+              <source src="research/electron_heating_video.mp4#t=2" type="video/mp4"> 
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/blancocd/iharm3d/tree/feature/electron-models" target="_blank" rel="noopener noreferrer">Electron Heating Models in General Relativistic Magnetohydrodynamic Fluid Simulation</a></h3>
+            <p style="margin-bottom: 0px;">
+              <span style="color: #150c21b6;">César Díaz Blanco</span>, <a href="https://vedantdhruv96.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Vedant Dhruv</a>, <a href="https://rainman.astro.illinois.edu/gammie/" class="author-link" target="_blank" rel="noopener noreferrer">Charles F. Gammie</a>
+            </p>
+            <p>
+               • Implemented test problems in C/C++ to assess the correct evolution of the fluid's entropy in the group's second-order, energy-conservative parallel simulation code<br>
+               • Analyzed error convergence of the fluid variables to the analytical solution by calculating its norm across multiple parameters and timescales<br>
+               <a href="research/electron_heating_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+               <a href="https://github.com/blancocd/iharm3d/tree/feature/electron-models" target="_blank" rel="noopener noreferrer">Code</a>
             </p>
           </div>
         </div>
-        
+
+        <!-- Projects -->
         <div class="list-item projects" data-category="projects">
-          <a href="https://github.com/blancocd/yolo_loss/" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
-              <source src="videos/adieu_0.45.mp4" type="video/mp4">
+          <a class="thumbnail">
+            <video playsinline="" muted="" loop="" width="180px">
+              <source src="projects/gaussian_head_viewer_video.webm" type="video/webm">
             </video>
           </a>
           <div class="project-description">
-            <h3><a href="https://github.com/blancocd/yolo_loss">Object detection with YOLO and ResNet-50</a></h3>
+            <h3><a href="projects/gaussian_head_viewer_slides.pdf" target="_blank" rel="noopener noreferrer">Gaussian Head Viewer</a></h3>
+            <p style="margin-bottom: 0px;">
+              <a href="https://danieleskandar.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Daniel Eskandar</a>, <span style="color: #150c21b6;">César Díaz Blanco</span>, <a href="https://bernakabadayi.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Berna Kabadayi</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" class="author-link" target="_blank" rel="noopener noreferrer">Gerard Pons-Moll</a>
+            </p>
             <p>
-               • Implemented YOLO's five-stage loss and fine tuned its regularization constants <br>
-               • Reached 0.5175 mean average precision <br>
-                <a href="https://github.com/blancocd/yolo_loss">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://www.youtube.com/playlist?list=PLDlDnCbITAdFYP-swRmlfP0tSfKTgHCaE">Demo</a>
+              Gaussian Splatting Visualizer for head avatars compatible with PhysHead (CVPR 2026)<br>
+              • Implemented a gaussian axes view with OpenGL using vertex and fragment shaders  <br>
+               • Enabled on-the-fly curly hair editing with controllable amplitude and frequency   <br>
+               <a href="projects/gaussian_head_viewer_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+               <a href="projects/gaussian_head_viewer_report.pdf" target="_blank" rel="noopener noreferrer">Report</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+               <a href="https://github.com/danieleskandar/Gaussian-Head-Viewer" target="_blank" rel="noopener noreferrer">Code</a>
+                <br><br>
             </p>
           </div>
         </div>
 
         <div class="list-item projects" data-category="projects">
-          <a href="https://github.com/blancocd/NN-numpy" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
-              <source src="videos/tinyaxolotl.mp4" type="video/mp4">
+          <a href="#" class="thumbnail" data-lightbox-src="projects/NN-numpy_axolotl_positional_encodings.mp4">
+            <video playsinline="" muted="" loop="" width="180px">
+              <source src="projects/NN-numpy_axolotl.mp4#t=1" type="video/mp4">
             </video>
           </a>
           <div class="project-description">
-            <h3><a href="https://github.com/blancocd/NN-numpy">Neural network framework from scratch using NumPy</a></h3>
+            <h3><a href="https://github.com/blancocd/NN-numpy" target="_blank" rel="noopener noreferrer">Neural network framework from scratch using NumPy</a></h3>
             <p>
                • Implemented backpropagation with support for sigmoid, softmax, ReLU, and linear layers<br>
-               • Built in several optimizers including Adam, mini-batch SGD, and SGD<br>
-               • Experimented by learning images with different positional encodings as seen in the <a href="videos/axolotl.mp4">demo</a> <br>
-                <a href="https://github.com/blancocd/NN-numpy">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="videos/axolotl.mp4">Demo</a>
+               • Integrated several optimizers including Adam, mini-batch SGD, and SGD<br>
+               • Capable of learning images with different positional encodings<br>
+                <a href="https://github.com/blancocd/NN-numpy" target="_blank" rel="noopener noreferrer">Code</a>
             </p>
           </div>
         </div>
 
         <!-- Reports -->
         <div class="list-item notes" data-category="notes">
-          <a href="notes/NeRF.pdf" class="thumbnail">
-              <img src="notes/nerf.png">
+          <a href="notes/AliasingNVS_slides.pdf" class="thumbnail" target="_blank" rel="noopener noreferrer">
+              <img src="notes/aliasing.png">
           </a>
           <div class="project-description">
-            <h3><a href="notes/NeRF.pdf">NeRF and follow-up works </a></h3>
+            <h3><a href="notes/AliasingNVS_slides.pdf" target="_blank" rel="noopener noreferrer">Aliasing in Novel View Synthesis</a></h3>
             <p>
-                Report focusing on the volume rendering equation, its approximation in NeRF, and succesive works addresing dynamic scenes, efficient training, and surface extraction. <br>
-                Written as part of a bonus exercise for the <a href="https://virtualhumans.mpi-inf.mpg.de/VH23/">Virtual Humans WS23/24 course.</a> <br>
-                <a href="notes/NeRF.pdf">Report</a>
+                Slides and report focusing on the shortcomings of NeRF and 3DGS when rendering images at different sampling rates than those in the training set. It gives a brief but detailed description of NeRF and 3DGS to understand where they fail, introduces Mip-NeRF and Mip-Splatting solutions, and highlights aliasing effects specific to differential rendering methods.  <br>
+                <a href="notes/AliasingNVS_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="notes/AliasingNVS_report.pdf" target="_blank" rel="noopener noreferrer">Report</a>
             </p>
           </div>
         </div>
 
         <div class="list-item notes" data-category="notes">
-          <a href="notes/AliasingNVS.pdf" class="thumbnail">
-              <img src="notes/aliasing.png">
+          <a href="notes/NeRF.pdf" class="thumbnail" target="_blank" rel="noopener noreferrer">
+              <img src="notes/nerf.png">
           </a>
           <div class="project-description">
-            <h3><a href="notes/AliasingNVS.pdf">Aliasing in Novel View Synthesis</a></h3>
+            <h3><a href="notes/NeRF.pdf" target="_blank" rel="noopener noreferrer">NeRF and follow-up works </a></h3>
             <p>
-                Report and slides focusing on the shortcomings of NeRF and 3DGS when rendering images at different sampling rates than those in the training set. It gives a brief but detailed description of NeRF and 3DGS to understand where they fail, introduces Mip-NeRF and Mip-Splatting solutions, and highlights aliasing effects specific to differential rendering methods.  <br>
-                The report and slides were made as part of the <a href="https://graphics.cs.uni-tuebingen.de/teaching"> Advanced Topics in Computer Graphics and Computer Vision Seminar WS24/25.</a> <br>
-                <a href="notes/AliasingNVS.pdf">Report</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://unitc-my.sharepoint.com/:p:/g/personal/zxoox46_s-cloud_uni-tuebingen_de/IQAwLQwzFy6wT7zS5QHarAufASsnRsCLn4spfvRgPVd-3Zg">Slides</a>
+                Report focusing on the volume rendering equation, its approximation in NeRF, and succesive works addresing dynamic scenes, efficient training, and surface extraction. <br>
+                <a href="notes/NeRF.pdf" target="_blank" rel="noopener noreferrer">Report</a>
             </p>
           </div>
         </div>
 
         <!-- Miscellaneous -->
         <div class="list-item misc" data-category="misc">
-          <a href="ticgatoe/TicGaToe.html" class="thumbnail">
+          <a href="ticgatoe/TicGaToe.html" class="thumbnail" target="_blank" rel="noopener noreferrer">
               <img src="images/ticgatoe.png">
           </a>
           <div class="project-description">
-            <h3><a href="ticgatoe/TicGaToe.html">TicGaToe</a></h3>
+            <h3><a href="ticgatoe/TicGaToe.html" target="_blank" rel="noopener noreferrer">TicGaToe</a></h3>
             <p>
                Reimagination of Connect4 on a circular board to play against your friends. <br>
                Get four of your checkers in a row forming a semicircle at any level or a line through the center. <br>
                Once a player has won, its checker will appear in the middle of the board. <br>
-               Tap the center twice to play again.
+               Tap the center twice to play again.<br>
+               <a href="ticgatoe/TicGaToe.html" target="_blank" rel="noopener noreferrer">Play!</a>
             </p>
           </div>
         </div>
 
       </div>
 
-      <div id="footer">This website is adapted from <a href="https://andyzeng.github.io/">Andy Zeng's website</a> which in turn was inspired by <a href="https://jonbarron.info/">Jon's website</a>.</div>
+      <div id="footer">This website is adapted from <a href="https://andyzeng.github.io/" target="_blank" rel="noopener noreferrer">Andy Zeng's website</a> which in turn was inspired by <a href="https://jonbarron.info/" target="_blank" rel="noopener noreferrer">Jon Barron's website</a>.</div>
 
     </div>
 
@@ -206,7 +256,7 @@
         // Retrieve cached button click.
         var defaultFilterValue = localStorage.getItem('filterValue');
         if (defaultFilterValue == null) {
-          defaultFilterValue = ".projects"
+          defaultFilterValue = ".research"
         }
         $grid.isotope({ filter: defaultFilterValue });
         var buttons = document.getElementsByClassName("button");
@@ -244,6 +294,45 @@
           update_isotope();
         }
       }
+
+      $('.thumbnail video').on('mouseenter', function() {
+        this.play();
+      }).on('mouseleave', function() {
+        this.pause();
+      });
+
+      $('body').append('<div id="video-lightbox"></div>');
+
+      $('.thumbnail').on('click', function(e) {
+        var $video = $(this).find('video');
+        
+        if ($video.length > 0) {
+          var customSrc = $(this).attr('data-lightbox-src');
+          var sourceHTML = '';
+
+          if (customSrc) {
+            sourceHTML = '<source src="' + customSrc + '" type="video/mp4">';
+          } else {
+            sourceHTML = $video.html(); 
+          }
+
+          var lightboxVideo = '<video autoplay loop>' + sourceHTML + '</video>';
+
+          $('#video-lightbox').html(lightboxVideo).css('display', 'flex');
+        }
+      });
+
+      $('#video-lightbox').on('click', function(e) {
+        if (e.target.id === 'video-lightbox') {
+          $(this).hide().empty();
+        }
+      });
+
+      $(document).on('keyup', function(e) {
+        if (e.key === "Escape" && $('#video-lightbox').is(':visible')) {
+          $('#video-lightbox').hide().empty(); 
+        }
+      });
 
       update_isotope();
 

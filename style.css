@@ -65,6 +65,15 @@ a {
   color: rgb(20, 110, 190);
 }
 
+a.author-link {
+  color: inherit;
+  transition: color 0.15s ease-in-out;
+}
+
+a.author-link:hover {
+  color: rgb(20, 110, 190);
+}
+
 a:hover {
   text-decoration: none;
   border-bottom: 1px solid rgb(20, 110, 190);
@@ -75,12 +84,12 @@ i {
 }
 
 b {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 2.4em;
-  line-height: 3em;
+  line-height: 2em;
   font-weight: 500;
 }
 
@@ -88,26 +97,26 @@ h1 {
 /* Profile image and description. */
 
 #intro {
-  padding-top: 6em;
+  padding-top: 2em;
   display: flex;
 }
 
 #intro-text {
-  width: 40em;
+  width: 37em;
   float: left;
 }
 
 #intro-image {
   margin: 2em 0 0 2em;
-  width: 12em;
-  height: 12em;
+  width: 15em;
+  height: 15em;
   float: left;
   overflow: hidden;
   border-radius: 1em;
 }
 
 #intro-image img {
-  width: 12em;
+  width: 15em;
 }
 
 /**************************************************/
@@ -280,47 +289,23 @@ h3 a:hover {
   color: rgb(20, 110, 190);
 }
 
-.projects {
-  margin-bottom: 0.5em;
-}
-
-.projects p {
-  font-size: 1em;
-  line-height: 1.5em;
-  color: #a0a8b0;
-}
-
-.project-description {
-  width: 80%;
-  float: left;
-}
-
-.notes {
-  margin-bottom: 0.5em;
-}
-
-.notes p {
-  font-size: 1em;
-  line-height: 1.5em;
-  color: #a0a8b0;
-}
-
-.note-description {
-  width: 80%;
-  float: left;
-}
-
+.research,
+.projects,
+.notes,
 .misc {
   margin-bottom: 0.5em;
 }
 
+.research p,
+.projects p,
+.notes p,
 .misc p {
   font-size: 1em;
   line-height: 1.5em;
-  color: #a0a8b0;
+  color: rgba(21, 12, 33, 0.6);
 }
 
-.misc-description {
+.project-description {
   width: 80%;
   float: left;
 }
@@ -333,4 +318,38 @@ h3 a:hover {
   position: absolute;
   bottom: 0;
   line-height: 2.5em;
+}
+
+@media screen and (min-width: 1400px) {
+  #body {
+    font-size: 1.23em; /* 125% zoom */
+  }
+}
+
+/* For ultra-wide and large 4K monitors */
+@media screen and (min-width: 1900px) {
+  #body {
+    font-size: 1.23em; /* 150% zoom */
+  }
+}
+
+#video-lightbox {
+  display: none; /* Hidden until clicked */
+  position: fixed;
+  z-index: 9999; /* Keeps it on top of absolutely everything */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+#video-lightbox video {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  outline: none;
 }
