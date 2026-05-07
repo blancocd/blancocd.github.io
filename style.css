@@ -374,7 +374,14 @@ h3 a:hover {
     width: 100%;
   }
   #intro-image {
-    margin: 1em 0; /* Center the image */
+    margin: 1em 0;
+  }
+  #footer {
+    line-height: 1.5em;
+    position: relative;
+    margin-top: 3em;
+    padding-bottom: 2em;
+    text-align: center;
   }
   .thumbnail {
     width: 100%; /* Make thumbnails full width on small screens */
@@ -382,5 +389,9 @@ h3 a:hover {
   }
   .project-description {
     width: 100%;
+  }
+  .thumbnail video {
+    width: 100%;
+    height: auto;
   }
 }
